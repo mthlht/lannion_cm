@@ -29,7 +29,9 @@ for(un_pdf in liste_pdf) {
   
   tidy_lines <- lines_vector %>%
     str_trim() %>%
-    str_to_lower()
+    str_to_lower() %>%
+    str_replace_all("–", "-") %>%
+    str_replace_all(":", "-")
   
   tidy_lines <- tidy_lines[tidy_lines != ""]
   
@@ -265,7 +267,7 @@ for(un_pdf in liste_pdf) {
     separate(col = nom, into = c("nom" ,"procuration"),
              sep = "\\(procuration à",
              fill = "right") %>%
-    mutate(procuration = str_remove(procuration, "[:punct:]")) %>%
+    mutate(procuration = str_remove(procuration, "\\)")) %>%
     mutate_at(c("nom", "procuration"), str_trim)
   
   
