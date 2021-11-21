@@ -1,0 +1,394 @@
+nom;procuration;etat;date;nuance;sexe;LibNua;Bloc;annais;csp_code;csp_lib;age;csp_n1
+paul le bihan;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1957;38;Ingénieur et cadre technique d'entreprise;64;Cadres et professions intellectuelles supérieures
+françoise le men;NA;présent;2020-05-25;LUG;F;Union de la gauche;GAU;1954;74;Ancien cadre;67;Retraités
+christian meheust;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+eric robert;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1968;37;Cadre administratif et commercial d'entreprise;53;Cadres et professions intellectuelles supérieures
+carine hue;NA;présent;2020-05-25;LUG;F;Union de la gauche;GAU;1977;38;Ingénieur et cadre technique d'entreprise;44;Cadres et professions intellectuelles supérieures
+cédric seureau;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1982;38;Ingénieur et cadre technique d'entreprise;39;Cadres et professions intellectuelles supérieures
+bernadette corvisier;NA;présent;2020-05-25;LUG;F;Union de la gauche;GAU;1958;33;Cadre de la fonction publique;63;Cadres et professions intellectuelles supérieures
+hervé latimier;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1950;74;Ancien cadre;71;Retraités
+sonya nicolas;NA;présent;2020-05-25;LUG;F;Union de la gauche;GAU;1956;34;Professeur, profession scientifique;65;Cadres et professions intellectuelles supérieures
+yves nedellec;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1956;33;Cadre de la fonction publique;65;Cadres et professions intellectuelles supérieures
+françoise barbier;NA;présent;2020-05-25;LUG;F;Union de la gauche;GAU;1958;77;Ancien employé;63;Retraités
+marc nedelec;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1955;78;Ancien ouvrier;66;Retraités
+anne-claire even;NA;présent;2020-05-25;LUG;F;Union de la gauche;GAU;1962;34;Professeur, profession scientifique;59;Cadres et professions intellectuelles supérieures
+fabien canevet;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1978;42;Professeur des écoles, instituteur et assimilé;43;Professions Intermédiaires
+nolwenn henry;NA;présent;2020-05-25;LUG;F;Union de la gauche;GAU;1972;46;Profession intermédiaire administrative et commerciale des entreprises;49;Professions Intermédiaires
+yvon briand;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1954;43;Profession intermédiaire de la santé et du travail social;67;Professions Intermédiaires
+gwénaëlle lair;NA;présent;2020-05-25;LUG;F;Union de la gauche;GAU;1976;85;Personne diverse sans activité professionnelle de moins de 60 ans (sauf retraité);45;Autres personnes sans activité professionnelle
+michel diverchy;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1963;38;Ingénieur et cadre technique d'entreprise;58;Cadres et professions intellectuelles supérieures
+pierre gouzi;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1952;74;Ancien cadre;69;Retraités
+christophe kergoat;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1978;52;Employé civil et agent de service de la fonction publique;43;Employés
+christine tanguy;NA;présent;2020-05-25;LUG;F;Union de la gauche;GAU;1968;56;Personnel des services directs aux particuliers;53;Employés
+fabrice louedec;NA;présent;2020-05-25;LUG;M;Union de la gauche;GAU;1971;34;Professeur, profession scientifique;50;Cadres et professions intellectuelles supérieures
+gaël cornec;NA;présent;2020-05-25;LREM;M;La République en marche;CENT;1974;33;Cadre de la fonction publique;47;Cadres et professions intellectuelles supérieures
+catherine bridet;NA;présent;2020-05-25;LREM;F;La République en marche;CENT;1974;31;Profession libérale;47;Cadres et professions intellectuelles supérieures
+louison noël;NA;présent;2020-05-25;LREM;M;La République en marche;CENT;1953;72;Ancien artisan, commerçant, chef d'entreprise;68;Retraités
+danielle marec;NA;présent;2020-05-25;LREM;F;La République en marche;CENT;1942;75;Ancienne profession intermédiaire;79;Retraités
+jean-yves callac;NA;présent;2020-05-25;LDVG;M;Divers gauche;GAU;1946;11;Agriculteur sur petite exploitation;75;Agriculteurs exploitants
+anne le guen;NA;présent;2020-05-25;LDVG;F;Divers gauche;GAU;1990;38;Ingénieur et cadre technique d'entreprise;31;Cadres et professions intellectuelles supérieures
+patrice kervaon;paul le bihan;procuration;2020-05-25;LUG;M;Union de la gauche;GAU;1960;33;Cadre de la fonction publique;61;Cadres et professions intellectuelles supérieures
+myriam dubourg;eric robert;procuration;2020-05-25;LUG;F;Union de la gauche;GAU;1969;42;Professeur des écoles, instituteur et assimilé;52;Professions Intermédiaires
+paul le bihan;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1957;38;Ingénieur et cadre technique d'entreprise;64;Cadres et professions intellectuelles supérieures
+eric robert;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1968;37;Cadre administratif et commercial d'entreprise;53;Cadres et professions intellectuelles supérieures
+françoise le men;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1954;74;Ancien cadre;67;Retraités
+cédric seureau;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1982;38;Ingénieur et cadre technique d'entreprise;39;Cadres et professions intellectuelles supérieures
+bernadette corvisier;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1958;33;Cadre de la fonction publique;63;Cadres et professions intellectuelles supérieures
+marc nedelec;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1955;78;Ancien ouvrier;66;Retraités
+trefina kerrain;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1987;56;Personnel des services directs aux particuliers;34;Employés
+gwénaëlle lair;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1976;85;Personne diverse sans activité professionnelle de moins de 60 ans (sauf retraité);45;Autres personnes sans activité professionnelle
+michel diverchy;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1963;38;Ingénieur et cadre technique d'entreprise;58;Cadres et professions intellectuelles supérieures
+hervé latimier;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1950;74;Ancien cadre;71;Retraités
+pierre gouzi;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1952;74;Ancien cadre;69;Retraités
+yvon briand;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1954;43;Profession intermédiaire de la santé et du travail social;67;Professions Intermédiaires
+marie-christine barac'h;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1955;75;Ancienne profession intermédiaire;66;Retraités
+sonya nicolas;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1956;34;Professeur, profession scientifique;65;Cadres et professions intellectuelles supérieures
+christian meheust;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+yves nedellec;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1956;33;Cadre de la fonction publique;65;Cadres et professions intellectuelles supérieures
+marie-annick guillou;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+françoise barbier;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1958;77;Ancien employé;63;Retraités
+anne-claire even;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1962;34;Professeur, profession scientifique;59;Cadres et professions intellectuelles supérieures
+christine tanguy;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1968;56;Personnel des services directs aux particuliers;53;Employés
+myriam dubourg;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1969;42;Professeur des écoles, instituteur et assimilé;52;Professions Intermédiaires
+fabrice louedec;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1971;34;Professeur, profession scientifique;50;Cadres et professions intellectuelles supérieures
+nolwenn henry;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1972;46;Profession intermédiaire administrative et commerciale des entreprises;49;Professions Intermédiaires
+carine hue;NA;présent;2020-06-08;LUG;F;Union de la gauche;GAU;1977;38;Ingénieur et cadre technique d'entreprise;44;Cadres et professions intellectuelles supérieures
+fabien canevet;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1978;42;Professeur des écoles, instituteur et assimilé;43;Professions Intermédiaires
+christophe kergoat;NA;présent;2020-06-08;LUG;M;Union de la gauche;GAU;1978;52;Employé civil et agent de service de la fonction publique;43;Employés
+gaël cornec;NA;présent;2020-06-08;LREM;M;La République en marche;CENT;1974;33;Cadre de la fonction publique;47;Cadres et professions intellectuelles supérieures
+catherine bridet;NA;présent;2020-06-08;LREM;F;La République en marche;CENT;1974;31;Profession libérale;47;Cadres et professions intellectuelles supérieures
+louison noël;NA;présent;2020-06-08;LREM;M;La République en marche;CENT;1953;72;Ancien artisan, commerçant, chef d'entreprise;68;Retraités
+danielle marec;NA;présent;2020-06-08;LREM;F;La République en marche;CENT;1942;75;Ancienne profession intermédiaire;79;Retraités
+jean-yves callac;NA;présent;2020-06-08;LDVG;M;Divers gauche;GAU;1946;11;Agriculteur sur petite exploitation;75;Agriculteurs exploitants
+anne le guen;NA;présent;2020-06-08;LDVG;F;Divers gauche;GAU;1990;38;Ingénieur et cadre technique d'entreprise;31;Cadres et professions intellectuelles supérieures
+patrice kervaon;paul le bihan;procuration;2020-06-08;LUG;M;Union de la gauche;GAU;1960;33;Cadre de la fonction publique;61;Cadres et professions intellectuelles supérieures
+paul le bihan;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1957;38;Ingénieur et cadre technique d'entreprise;64;Cadres et professions intellectuelles supérieures
+eric robert;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1968;37;Cadre administratif et commercial d'entreprise;53;Cadres et professions intellectuelles supérieures
+françoise le men;NA;présent;2020-07-06;LUG;F;Union de la gauche;GAU;1954;74;Ancien cadre;67;Retraités
+cédric seureau;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1982;38;Ingénieur et cadre technique d'entreprise;39;Cadres et professions intellectuelles supérieures
+bernadette corvisier;NA;présent;2020-07-06;LUG;F;Union de la gauche;GAU;1958;33;Cadre de la fonction publique;63;Cadres et professions intellectuelles supérieures
+marc nedelec;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1955;78;Ancien ouvrier;66;Retraités
+trefina kerrain;NA;présent;2020-07-06;LUG;F;Union de la gauche;GAU;1987;56;Personnel des services directs aux particuliers;34;Employés
+gwénaëlle lair;NA;présent;2020-07-06;LUG;F;Union de la gauche;GAU;1976;85;Personne diverse sans activité professionnelle de moins de 60 ans (sauf retraité);45;Autres personnes sans activité professionnelle
+michel diverchy;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1963;38;Ingénieur et cadre technique d'entreprise;58;Cadres et professions intellectuelles supérieures
+hervé latimier;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1950;74;Ancien cadre;71;Retraités
+pierre gouzi;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1952;74;Ancien cadre;69;Retraités
+yvon briand;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1954;43;Profession intermédiaire de la santé et du travail social;67;Professions Intermédiaires
+marie-christine barac'h;NA;présent;2020-07-06;LUG;F;Union de la gauche;GAU;1955;75;Ancienne profession intermédiaire;66;Retraités
+sonya nicolas;NA;présent;2020-07-06;LUG;F;Union de la gauche;GAU;1956;34;Professeur, profession scientifique;65;Cadres et professions intellectuelles supérieures
+christian meheust;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+yves nedellec;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1956;33;Cadre de la fonction publique;65;Cadres et professions intellectuelles supérieures
+marie-annick guillou;NA;présent;2020-07-06;LUG;F;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+françoise barbier;NA;présent;2020-07-06;LUG;F;Union de la gauche;GAU;1958;77;Ancien employé;63;Retraités
+anne-claire even;NA;présent;2020-07-06;LUG;F;Union de la gauche;GAU;1962;34;Professeur, profession scientifique;59;Cadres et professions intellectuelles supérieures
+myriam dubourg;NA;présent;2020-07-06;LUG;F;Union de la gauche;GAU;1969;42;Professeur des écoles, instituteur et assimilé;52;Professions Intermédiaires
+fabrice louedec;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1971;34;Professeur, profession scientifique;50;Cadres et professions intellectuelles supérieures
+nolwenn henry;NA;présent;2020-07-06;LUG;F;Union de la gauche;GAU;1972;46;Profession intermédiaire administrative et commerciale des entreprises;49;Professions Intermédiaires
+carine hue;NA;présent;2020-07-06;LUG;F;Union de la gauche;GAU;1977;38;Ingénieur et cadre technique d'entreprise;44;Cadres et professions intellectuelles supérieures
+fabien canevet;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1978;42;Professeur des écoles, instituteur et assimilé;43;Professions Intermédiaires
+christophe kergoat;NA;présent;2020-07-06;LUG;M;Union de la gauche;GAU;1978;52;Employé civil et agent de service de la fonction publique;43;Employés
+gaël cornec;NA;présent;2020-07-06;LREM;M;La République en marche;CENT;1974;33;Cadre de la fonction publique;47;Cadres et professions intellectuelles supérieures
+catherine bridet;NA;présent;2020-07-06;LREM;F;La République en marche;CENT;1974;31;Profession libérale;47;Cadres et professions intellectuelles supérieures
+danielle marec;NA;présent;2020-07-06;LREM;F;La République en marche;CENT;1942;75;Ancienne profession intermédiaire;79;Retraités
+jean-yves callac;NA;présent;2020-07-06;LDVG;M;Divers gauche;GAU;1946;11;Agriculteur sur petite exploitation;75;Agriculteurs exploitants
+anne le guen;NA;présent;2020-07-06;LDVG;F;Divers gauche;GAU;1990;38;Ingénieur et cadre technique d'entreprise;31;Cadres et professions intellectuelles supérieures
+patrice kervaon;paul le bihan;procuration;2020-07-06;LUG;M;Union de la gauche;GAU;1960;33;Cadre de la fonction publique;61;Cadres et professions intellectuelles supérieures
+christine tanguy;bernadette corvisier;procuration;2020-07-06;LUG;F;Union de la gauche;GAU;1968;56;Personnel des services directs aux particuliers;53;Employés
+louison noël;NA;absent;2020-07-06;LREM;M;La République en marche;CENT;1953;72;Ancien artisan, commerçant, chef d'entreprise;68;Retraités
+paul le bihan;NA;présent;2020-09-28;LUG;M;Union de la gauche;GAU;1957;38;Ingénieur et cadre technique d'entreprise;64;Cadres et professions intellectuelles supérieures
+eric robert;NA;présent;2020-09-28;LUG;M;Union de la gauche;GAU;1968;37;Cadre administratif et commercial d'entreprise;53;Cadres et professions intellectuelles supérieures
+françoise le men;NA;présent;2020-09-28;LUG;F;Union de la gauche;GAU;1954;74;Ancien cadre;67;Retraités
+cédric seureau;NA;présent;2020-09-28;LUG;M;Union de la gauche;GAU;1982;38;Ingénieur et cadre technique d'entreprise;39;Cadres et professions intellectuelles supérieures
+bernadette corvisier;NA;présent;2020-09-28;LUG;F;Union de la gauche;GAU;1958;33;Cadre de la fonction publique;63;Cadres et professions intellectuelles supérieures
+marc nedelec;NA;présent;2020-09-28;LUG;M;Union de la gauche;GAU;1955;78;Ancien ouvrier;66;Retraités
+trefina kerrain;NA;présent;2020-09-28;LUG;F;Union de la gauche;GAU;1987;56;Personnel des services directs aux particuliers;34;Employés
+patrice kervaon;NA;présent;2020-09-28;LUG;M;Union de la gauche;GAU;1960;33;Cadre de la fonction publique;61;Cadres et professions intellectuelles supérieures
+gwénaëlle lair;NA;présent;2020-09-28;LUG;F;Union de la gauche;GAU;1976;85;Personne diverse sans activité professionnelle de moins de 60 ans (sauf retraité);45;Autres personnes sans activité professionnelle
+michel diverchy;NA;présent;2020-09-28;LUG;M;Union de la gauche;GAU;1963;38;Ingénieur et cadre technique d'entreprise;58;Cadres et professions intellectuelles supérieures
+hervé latimier;NA;présent;2020-09-28;LUG;M;Union de la gauche;GAU;1950;74;Ancien cadre;71;Retraités
+pierre gouzi;NA;présent;2020-09-28;LUG;M;Union de la gauche;GAU;1952;74;Ancien cadre;69;Retraités
+yvon briand;NA;présent;2020-09-28;LUG;M;Union de la gauche;GAU;1954;43;Profession intermédiaire de la santé et du travail social;67;Professions Intermédiaires
+marie-christine barac'h;NA;présent;2020-09-28;LUG;F;Union de la gauche;GAU;1955;75;Ancienne profession intermédiaire;66;Retraités
+yves nedellec;NA;présent;2020-09-28;LUG;M;Union de la gauche;GAU;1956;33;Cadre de la fonction publique;65;Cadres et professions intellectuelles supérieures
+marie-annick guillou;NA;présent;2020-09-28;LUG;F;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+françoise barbier;NA;présent;2020-09-28;LUG;F;Union de la gauche;GAU;1958;77;Ancien employé;63;Retraités
+anne-claire even;NA;présent;2020-09-28;LUG;F;Union de la gauche;GAU;1962;34;Professeur, profession scientifique;59;Cadres et professions intellectuelles supérieures
+christine tanguy;NA;présent;2020-09-28;LUG;F;Union de la gauche;GAU;1968;56;Personnel des services directs aux particuliers;53;Employés
+myriam dubourg;NA;présent;2020-09-28;LUG;F;Union de la gauche;GAU;1969;42;Professeur des écoles, instituteur et assimilé;52;Professions Intermédiaires
+fabrice louedec;NA;présent;2020-09-28;LUG;M;Union de la gauche;GAU;1971;34;Professeur, profession scientifique;50;Cadres et professions intellectuelles supérieures
+nolwenn henry;NA;présent;2020-09-28;LUG;F;Union de la gauche;GAU;1972;46;Profession intermédiaire administrative et commerciale des entreprises;49;Professions Intermédiaires
+carine hue;NA;présent;2020-09-28;LUG;F;Union de la gauche;GAU;1977;38;Ingénieur et cadre technique d'entreprise;44;Cadres et professions intellectuelles supérieures
+christophe kergoat;NA;présent;2020-09-28;LUG;M;Union de la gauche;GAU;1978;52;Employé civil et agent de service de la fonction publique;43;Employés
+gaël cornec;NA;présent;2020-09-28;LREM;M;La République en marche;CENT;1974;33;Cadre de la fonction publique;47;Cadres et professions intellectuelles supérieures
+catherine bridet;NA;présent;2020-09-28;LREM;F;La République en marche;CENT;1974;31;Profession libérale;47;Cadres et professions intellectuelles supérieures
+danielle marec;NA;présent;2020-09-28;LREM;F;La République en marche;CENT;1942;75;Ancienne profession intermédiaire;79;Retraités
+jean-yves callac;NA;présent;2020-09-28;LDVG;M;Divers gauche;GAU;1946;11;Agriculteur sur petite exploitation;75;Agriculteurs exploitants
+anne le guen;NA;présent;2020-09-28;LDVG;F;Divers gauche;GAU;1990;38;Ingénieur et cadre technique d'entreprise;31;Cadres et professions intellectuelles supérieures
+sonya nicolas;yvon briand;procuration;2020-09-28;LUG;F;Union de la gauche;GAU;1956;34;Professeur, profession scientifique;65;Cadres et professions intellectuelles supérieures
+christian meheust;françoise barbier;procuration;2020-09-28;LUG;M;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+fabien canevet;eric robert;procuration;2020-09-28;LUG;M;Union de la gauche;GAU;1978;42;Professeur des écoles, instituteur et assimilé;43;Professions Intermédiaires
+louison noël;catherine bridet;procuration;2020-09-28;LREM;M;La République en marche;CENT;1953;72;Ancien artisan, commerçant, chef d'entreprise;68;Retraités
+paul le bihan;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1957;38;Ingénieur et cadre technique d'entreprise;64;Cadres et professions intellectuelles supérieures
+eric robert;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1968;37;Cadre administratif et commercial d'entreprise;53;Cadres et professions intellectuelles supérieures
+françoise le men;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1954;74;Ancien cadre;67;Retraités
+cédric seureau;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1982;38;Ingénieur et cadre technique d'entreprise;39;Cadres et professions intellectuelles supérieures
+bernadette corvisier;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1958;33;Cadre de la fonction publique;63;Cadres et professions intellectuelles supérieures
+marc nedelec;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1955;78;Ancien ouvrier;66;Retraités
+trefina kerrain;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1987;56;Personnel des services directs aux particuliers;34;Employés
+patrice kervaon;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1960;33;Cadre de la fonction publique;61;Cadres et professions intellectuelles supérieures
+gwénaëlle lair;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1976;85;Personne diverse sans activité professionnelle de moins de 60 ans (sauf retraité);45;Autres personnes sans activité professionnelle
+michel diverchy;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1963;38;Ingénieur et cadre technique d'entreprise;58;Cadres et professions intellectuelles supérieures
+hervé latimier;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1950;74;Ancien cadre;71;Retraités
+pierre gouzi;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1952;74;Ancien cadre;69;Retraités
+yvon briand;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1954;43;Profession intermédiaire de la santé et du travail social;67;Professions Intermédiaires
+marie-christine barac'h;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1955;75;Ancienne profession intermédiaire;66;Retraités
+sonya nicolas;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1956;34;Professeur, profession scientifique;65;Cadres et professions intellectuelles supérieures
+christian meheust;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+yves nedellec;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1956;33;Cadre de la fonction publique;65;Cadres et professions intellectuelles supérieures
+marie-annick guillou;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+françoise barbier;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1958;77;Ancien employé;63;Retraités
+anne-claire even;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1962;34;Professeur, profession scientifique;59;Cadres et professions intellectuelles supérieures
+christine tanguy;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1968;56;Personnel des services directs aux particuliers;53;Employés
+myriam dubourg;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1969;42;Professeur des écoles, instituteur et assimilé;52;Professions Intermédiaires
+fabrice louedec;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1971;34;Professeur, profession scientifique;50;Cadres et professions intellectuelles supérieures
+nolwenn henry;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1972;46;Profession intermédiaire administrative et commerciale des entreprises;49;Professions Intermédiaires
+carine hue;NA;présent;2020-11-16;LUG;F;Union de la gauche;GAU;1977;38;Ingénieur et cadre technique d'entreprise;44;Cadres et professions intellectuelles supérieures
+christophe kergoat;NA;présent;2020-11-16;LUG;M;Union de la gauche;GAU;1978;52;Employé civil et agent de service de la fonction publique;43;Employés
+gaël cornec;NA;présent;2020-11-16;LREM;M;La République en marche;CENT;1974;33;Cadre de la fonction publique;47;Cadres et professions intellectuelles supérieures
+catherine bridet;NA;présent;2020-11-16;LREM;F;La République en marche;CENT;1974;31;Profession libérale;47;Cadres et professions intellectuelles supérieures
+louison noël;NA;présent;2020-11-16;LREM;M;La République en marche;CENT;1953;72;Ancien artisan, commerçant, chef d'entreprise;68;Retraités
+danielle marec;NA;présent;2020-11-16;LREM;F;La République en marche;CENT;1942;75;Ancienne profession intermédiaire;79;Retraités
+jean-yves callac;NA;présent;2020-11-16;LDVG;M;Divers gauche;GAU;1946;11;Agriculteur sur petite exploitation;75;Agriculteurs exploitants
+anne le guen;NA;présent;2020-11-16;LDVG;F;Divers gauche;GAU;1990;38;Ingénieur et cadre technique d'entreprise;31;Cadres et professions intellectuelles supérieures
+fabien canevet;NA;absent;2020-11-16;LUG;M;Union de la gauche;GAU;1978;42;Professeur des écoles, instituteur et assimilé;43;Professions Intermédiaires
+paul le bihan;NA;présent;2020-12-14;LUG;M;Union de la gauche;GAU;1957;38;Ingénieur et cadre technique d'entreprise;64;Cadres et professions intellectuelles supérieures
+eric robert;NA;présent;2020-12-14;LUG;M;Union de la gauche;GAU;1968;37;Cadre administratif et commercial d'entreprise;53;Cadres et professions intellectuelles supérieures
+françoise le men;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1954;74;Ancien cadre;67;Retraités
+cédric seureau;NA;présent;2020-12-14;LUG;M;Union de la gauche;GAU;1982;38;Ingénieur et cadre technique d'entreprise;39;Cadres et professions intellectuelles supérieures
+bernadette corvisier;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1958;33;Cadre de la fonction publique;63;Cadres et professions intellectuelles supérieures
+marc nedelec;NA;présent;2020-12-14;LUG;M;Union de la gauche;GAU;1955;78;Ancien ouvrier;66;Retraités
+trefina kerrain;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1987;56;Personnel des services directs aux particuliers;34;Employés
+patrice kervaon;NA;présent;2020-12-14;LUG;M;Union de la gauche;GAU;1960;33;Cadre de la fonction publique;61;Cadres et professions intellectuelles supérieures
+gwénaëlle lair;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1976;85;Personne diverse sans activité professionnelle de moins de 60 ans (sauf retraité);45;Autres personnes sans activité professionnelle
+michel diverchy;NA;présent;2020-12-14;LUG;M;Union de la gauche;GAU;1963;38;Ingénieur et cadre technique d'entreprise;58;Cadres et professions intellectuelles supérieures
+hervé latimier;NA;présent;2020-12-14;LUG;M;Union de la gauche;GAU;1950;74;Ancien cadre;71;Retraités
+pierre gouzi;NA;présent;2020-12-14;LUG;M;Union de la gauche;GAU;1952;74;Ancien cadre;69;Retraités
+yvon briand;NA;présent;2020-12-14;LUG;M;Union de la gauche;GAU;1954;43;Profession intermédiaire de la santé et du travail social;67;Professions Intermédiaires
+marie-christine barac'h;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1955;75;Ancienne profession intermédiaire;66;Retraités
+sonya nicolas;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1956;34;Professeur, profession scientifique;65;Cadres et professions intellectuelles supérieures
+christian meheust;NA;présent;2020-12-14;LUG;M;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+yves nedellec;NA;présent;2020-12-14;LUG;M;Union de la gauche;GAU;1956;33;Cadre de la fonction publique;65;Cadres et professions intellectuelles supérieures
+marie-annick guillou;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+françoise barbier;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1958;77;Ancien employé;63;Retraités
+anne-claire even;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1962;34;Professeur, profession scientifique;59;Cadres et professions intellectuelles supérieures
+christine tanguy;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1968;56;Personnel des services directs aux particuliers;53;Employés
+myriam dubourg;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1969;42;Professeur des écoles, instituteur et assimilé;52;Professions Intermédiaires
+fabrice louedec;NA;présent;2020-12-14;LUG;M;Union de la gauche;GAU;1971;34;Professeur, profession scientifique;50;Cadres et professions intellectuelles supérieures
+nolwenn henry;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1972;46;Profession intermédiaire administrative et commerciale des entreprises;49;Professions Intermédiaires
+carine hue;NA;présent;2020-12-14;LUG;F;Union de la gauche;GAU;1977;38;Ingénieur et cadre technique d'entreprise;44;Cadres et professions intellectuelles supérieures
+gaël cornec;NA;présent;2020-12-14;LREM;M;La République en marche;CENT;1974;33;Cadre de la fonction publique;47;Cadres et professions intellectuelles supérieures
+catherine bridet;NA;présent;2020-12-14;LREM;F;La République en marche;CENT;1974;31;Profession libérale;47;Cadres et professions intellectuelles supérieures
+louison noël;NA;présent;2020-12-14;LREM;M;La République en marche;CENT;1953;72;Ancien artisan, commerçant, chef d'entreprise;68;Retraités
+danielle marec;NA;présent;2020-12-14;LREM;F;La République en marche;CENT;1942;75;Ancienne profession intermédiaire;79;Retraités
+jean-yves callac;NA;présent;2020-12-14;LDVG;M;Divers gauche;GAU;1946;11;Agriculteur sur petite exploitation;75;Agriculteurs exploitants
+anne le guen;NA;présent;2020-12-14;LDVG;F;Divers gauche;GAU;1990;38;Ingénieur et cadre technique d'entreprise;31;Cadres et professions intellectuelles supérieures
+fabien canevet;NA;absent;2020-12-14;LUG;M;Union de la gauche;GAU;1978;42;Professeur des écoles, instituteur et assimilé;43;Professions Intermédiaires
+christophe kergoat;NA;absent;2020-12-14;LUG;M;Union de la gauche;GAU;1978;52;Employé civil et agent de service de la fonction publique;43;Employés
+paul le bihan;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1957;38;Ingénieur et cadre technique d'entreprise;64;Cadres et professions intellectuelles supérieures
+eric robert;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1968;37;Cadre administratif et commercial d'entreprise;53;Cadres et professions intellectuelles supérieures
+françoise le men;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1954;74;Ancien cadre;67;Retraités
+cédric seureau;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1982;38;Ingénieur et cadre technique d'entreprise;39;Cadres et professions intellectuelles supérieures
+bernadette corvisier;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1958;33;Cadre de la fonction publique;63;Cadres et professions intellectuelles supérieures
+marc nedelec;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1955;78;Ancien ouvrier;66;Retraités
+trefina kerrain;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1987;56;Personnel des services directs aux particuliers;34;Employés
+patrice kervaon;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1960;33;Cadre de la fonction publique;61;Cadres et professions intellectuelles supérieures
+gwénaëlle lair;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1976;85;Personne diverse sans activité professionnelle de moins de 60 ans (sauf retraité);45;Autres personnes sans activité professionnelle
+michel diverchy;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1963;38;Ingénieur et cadre technique d'entreprise;58;Cadres et professions intellectuelles supérieures
+hervé latimier;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1950;74;Ancien cadre;71;Retraités
+pierre gouzi;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1952;74;Ancien cadre;69;Retraités
+yvon briand;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1954;43;Profession intermédiaire de la santé et du travail social;67;Professions Intermédiaires
+marie-christine barac'h;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1955;75;Ancienne profession intermédiaire;66;Retraités
+sonya nicolas;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1956;34;Professeur, profession scientifique;65;Cadres et professions intellectuelles supérieures
+christian meheust;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+yves nedellec;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1956;33;Cadre de la fonction publique;65;Cadres et professions intellectuelles supérieures
+marie-annick guillou;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+françoise barbier;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1958;77;Ancien employé;63;Retraités
+anne-claire even;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1962;34;Professeur, profession scientifique;59;Cadres et professions intellectuelles supérieures
+christine tanguy;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1968;56;Personnel des services directs aux particuliers;53;Employés
+myriam dubourg;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1969;42;Professeur des écoles, instituteur et assimilé;52;Professions Intermédiaires
+fabrice louedec;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1971;34;Professeur, profession scientifique;50;Cadres et professions intellectuelles supérieures
+nolwenn henry;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1972;46;Profession intermédiaire administrative et commerciale des entreprises;49;Professions Intermédiaires
+carine hue;NA;présent;2021-02-08;LUG;F;Union de la gauche;GAU;1977;38;Ingénieur et cadre technique d'entreprise;44;Cadres et professions intellectuelles supérieures
+fabien canevet;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1978;42;Professeur des écoles, instituteur et assimilé;43;Professions Intermédiaires
+christophe kergoat;NA;présent;2021-02-08;LUG;M;Union de la gauche;GAU;1978;52;Employé civil et agent de service de la fonction publique;43;Employés
+gaël cornec;NA;présent;2021-02-08;LREM;M;La République en marche;CENT;1974;33;Cadre de la fonction publique;47;Cadres et professions intellectuelles supérieures
+catherine bridet;NA;présent;2021-02-08;LREM;F;La République en marche;CENT;1974;31;Profession libérale;47;Cadres et professions intellectuelles supérieures
+danielle marec;NA;présent;2021-02-08;LREM;F;La République en marche;CENT;1942;75;Ancienne profession intermédiaire;79;Retraités
+jean-yves callac;NA;présent;2021-02-08;LDVG;M;Divers gauche;GAU;1946;11;Agriculteur sur petite exploitation;75;Agriculteurs exploitants
+anne le guen;NA;présent;2021-02-08;LDVG;F;Divers gauche;GAU;1990;38;Ingénieur et cadre technique d'entreprise;31;Cadres et professions intellectuelles supérieures
+louison noël;gaël cornec;procuration;2021-02-08;LREM;M;La République en marche;CENT;1953;72;Ancien artisan, commerçant, chef d'entreprise;68;Retraités
+paul le bihan;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1957;38;Ingénieur et cadre technique d'entreprise;64;Cadres et professions intellectuelles supérieures
+françoise le men;NA;présent;2021-03-26;LUG;F;Union de la gauche;GAU;1954;74;Ancien cadre;67;Retraités
+cédric seureau;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1982;38;Ingénieur et cadre technique d'entreprise;39;Cadres et professions intellectuelles supérieures
+bernadette corvisier;NA;présent;2021-03-26;LUG;F;Union de la gauche;GAU;1958;33;Cadre de la fonction publique;63;Cadres et professions intellectuelles supérieures
+marc nedelec;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1955;78;Ancien ouvrier;66;Retraités
+trefina kerrain;NA;présent;2021-03-26;LUG;F;Union de la gauche;GAU;1987;56;Personnel des services directs aux particuliers;34;Employés
+patrice kervaon;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1960;33;Cadre de la fonction publique;61;Cadres et professions intellectuelles supérieures
+gwénaëlle lair;NA;présent;2021-03-26;LUG;F;Union de la gauche;GAU;1976;85;Personne diverse sans activité professionnelle de moins de 60 ans (sauf retraité);45;Autres personnes sans activité professionnelle
+michel diverchy;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1963;38;Ingénieur et cadre technique d'entreprise;58;Cadres et professions intellectuelles supérieures
+hervé latimier;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1950;74;Ancien cadre;71;Retraités
+pierre gouzi;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1952;74;Ancien cadre;69;Retraités
+yvon briand;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1954;43;Profession intermédiaire de la santé et du travail social;67;Professions Intermédiaires
+marie-christine barac'h;NA;présent;2021-03-26;LUG;F;Union de la gauche;GAU;1955;75;Ancienne profession intermédiaire;66;Retraités
+christian meheust;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+yves nedellec;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1956;33;Cadre de la fonction publique;65;Cadres et professions intellectuelles supérieures
+marie-annick guillou;NA;présent;2021-03-26;LUG;F;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+françoise barbier;NA;présent;2021-03-26;LUG;F;Union de la gauche;GAU;1958;77;Ancien employé;63;Retraités
+anne-claire even;NA;présent;2021-03-26;LUG;F;Union de la gauche;GAU;1962;34;Professeur, profession scientifique;59;Cadres et professions intellectuelles supérieures
+christine tanguy;NA;présent;2021-03-26;LUG;F;Union de la gauche;GAU;1968;56;Personnel des services directs aux particuliers;53;Employés
+myriam dubourg;NA;présent;2021-03-26;LUG;F;Union de la gauche;GAU;1969;42;Professeur des écoles, instituteur et assimilé;52;Professions Intermédiaires
+fabrice louedec;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1971;34;Professeur, profession scientifique;50;Cadres et professions intellectuelles supérieures
+nolwenn henry;NA;présent;2021-03-26;LUG;F;Union de la gauche;GAU;1972;46;Profession intermédiaire administrative et commerciale des entreprises;49;Professions Intermédiaires
+carine hue;NA;présent;2021-03-26;LUG;F;Union de la gauche;GAU;1977;38;Ingénieur et cadre technique d'entreprise;44;Cadres et professions intellectuelles supérieures
+fabien canevet;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1978;42;Professeur des écoles, instituteur et assimilé;43;Professions Intermédiaires
+christophe kergoat;NA;présent;2021-03-26;LUG;M;Union de la gauche;GAU;1978;52;Employé civil et agent de service de la fonction publique;43;Employés
+catherine bridet;NA;présent;2021-03-26;LREM;F;La République en marche;CENT;1974;31;Profession libérale;47;Cadres et professions intellectuelles supérieures
+danielle marec;NA;présent;2021-03-26;LREM;F;La République en marche;CENT;1942;75;Ancienne profession intermédiaire;79;Retraités
+jean-yves callac;NA;présent;2021-03-26;LDVG;M;Divers gauche;GAU;1946;11;Agriculteur sur petite exploitation;75;Agriculteurs exploitants
+anne le guen;NA;présent;2021-03-26;LDVG;F;Divers gauche;GAU;1990;38;Ingénieur et cadre technique d'entreprise;31;Cadres et professions intellectuelles supérieures
+sonya nicolas;patrice kervaon;procuration;2021-03-26;LUG;F;Union de la gauche;GAU;1956;34;Professeur, profession scientifique;65;Cadres et professions intellectuelles supérieures
+eric robert;NA;absent;2021-03-26;LUG;M;Union de la gauche;GAU;1968;37;Cadre administratif et commercial d'entreprise;53;Cadres et professions intellectuelles supérieures
+gaël cornec;NA;absent;2021-03-26;LREM;M;La République en marche;CENT;1974;33;Cadre de la fonction publique;47;Cadres et professions intellectuelles supérieures
+louison noël;NA;absent;2021-03-26;LREM;M;La République en marche;CENT;1953;72;Ancien artisan, commerçant, chef d'entreprise;68;Retraités
+paul le bihan;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1957;38;Ingénieur et cadre technique d'entreprise;64;Cadres et professions intellectuelles supérieures
+eric robert;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1968;37;Cadre administratif et commercial d'entreprise;53;Cadres et professions intellectuelles supérieures
+françoise le men;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1954;74;Ancien cadre;67;Retraités
+cédric seureau;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1982;38;Ingénieur et cadre technique d'entreprise;39;Cadres et professions intellectuelles supérieures
+bernadette corvisier;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1958;33;Cadre de la fonction publique;63;Cadres et professions intellectuelles supérieures
+marc nedelec;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1955;78;Ancien ouvrier;66;Retraités
+trefina kerrain;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1987;56;Personnel des services directs aux particuliers;34;Employés
+patrice kervaon;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1960;33;Cadre de la fonction publique;61;Cadres et professions intellectuelles supérieures
+gwénaëlle lair;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1976;85;Personne diverse sans activité professionnelle de moins de 60 ans (sauf retraité);45;Autres personnes sans activité professionnelle
+michel diverchy;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1963;38;Ingénieur et cadre technique d'entreprise;58;Cadres et professions intellectuelles supérieures
+hervé latimier;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1950;74;Ancien cadre;71;Retraités
+pierre gouzi;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1952;74;Ancien cadre;69;Retraités
+yvon briand;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1954;43;Profession intermédiaire de la santé et du travail social;67;Professions Intermédiaires
+marie-christine barac'h;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1955;75;Ancienne profession intermédiaire;66;Retraités
+sonya nicolas;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1956;34;Professeur, profession scientifique;65;Cadres et professions intellectuelles supérieures
+christian meheust;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+yves nedellec;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1956;33;Cadre de la fonction publique;65;Cadres et professions intellectuelles supérieures
+marie-annick guillou;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+françoise barbier;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1958;77;Ancien employé;63;Retraités
+anne-claire even;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1962;34;Professeur, profession scientifique;59;Cadres et professions intellectuelles supérieures
+christine tanguy;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1968;56;Personnel des services directs aux particuliers;53;Employés
+myriam dubourg;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1969;42;Professeur des écoles, instituteur et assimilé;52;Professions Intermédiaires
+fabrice louedec;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1971;34;Professeur, profession scientifique;50;Cadres et professions intellectuelles supérieures
+nolwenn henry;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1972;46;Profession intermédiaire administrative et commerciale des entreprises;49;Professions Intermédiaires
+carine hue;NA;présent;2021-05-28;LUG;F;Union de la gauche;GAU;1977;38;Ingénieur et cadre technique d'entreprise;44;Cadres et professions intellectuelles supérieures
+fabien canevet;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1978;42;Professeur des écoles, instituteur et assimilé;43;Professions Intermédiaires
+christophe kergoat;NA;présent;2021-05-28;LUG;M;Union de la gauche;GAU;1978;52;Employé civil et agent de service de la fonction publique;43;Employés
+gaël cornec;NA;présent;2021-05-28;LREM;M;La République en marche;CENT;1974;33;Cadre de la fonction publique;47;Cadres et professions intellectuelles supérieures
+catherine bridet;NA;présent;2021-05-28;LREM;F;La République en marche;CENT;1974;31;Profession libérale;47;Cadres et professions intellectuelles supérieures
+louison noël;NA;présent;2021-05-28;LREM;M;La République en marche;CENT;1953;72;Ancien artisan, commerçant, chef d'entreprise;68;Retraités
+danielle marec;NA;présent;2021-05-28;LREM;F;La République en marche;CENT;1942;75;Ancienne profession intermédiaire;79;Retraités
+jean-yves callac;NA;présent;2021-05-28;LDVG;M;Divers gauche;GAU;1946;11;Agriculteur sur petite exploitation;75;Agriculteurs exploitants
+anne le guen;NA;présent;2021-05-28;LDVG;F;Divers gauche;GAU;1990;38;Ingénieur et cadre technique d'entreprise;31;Cadres et professions intellectuelles supérieures
+paul le bihan;NA;présent;2021-07-05;LUG;M;Union de la gauche;GAU;1957;38;Ingénieur et cadre technique d'entreprise;64;Cadres et professions intellectuelles supérieures
+eric robert;NA;présent;2021-07-05;LUG;M;Union de la gauche;GAU;1968;37;Cadre administratif et commercial d'entreprise;53;Cadres et professions intellectuelles supérieures
+françoise le men;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1954;74;Ancien cadre;67;Retraités
+cédric seureau;NA;présent;2021-07-05;LUG;M;Union de la gauche;GAU;1982;38;Ingénieur et cadre technique d'entreprise;39;Cadres et professions intellectuelles supérieures
+bernadette corvisier;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1958;33;Cadre de la fonction publique;63;Cadres et professions intellectuelles supérieures
+marc nedelec;NA;présent;2021-07-05;LUG;M;Union de la gauche;GAU;1955;78;Ancien ouvrier;66;Retraités
+trefina kerrain;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1987;56;Personnel des services directs aux particuliers;34;Employés
+patrice kervaon;NA;présent;2021-07-05;LUG;M;Union de la gauche;GAU;1960;33;Cadre de la fonction publique;61;Cadres et professions intellectuelles supérieures
+gwénaëlle lair;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1976;85;Personne diverse sans activité professionnelle de moins de 60 ans (sauf retraité);45;Autres personnes sans activité professionnelle
+michel diverchy;NA;présent;2021-07-05;LUG;M;Union de la gauche;GAU;1963;38;Ingénieur et cadre technique d'entreprise;58;Cadres et professions intellectuelles supérieures
+hervé latimier;NA;présent;2021-07-05;LUG;M;Union de la gauche;GAU;1950;74;Ancien cadre;71;Retraités
+pierre gouzi;NA;présent;2021-07-05;LUG;M;Union de la gauche;GAU;1952;74;Ancien cadre;69;Retraités
+yvon briand;NA;présent;2021-07-05;LUG;M;Union de la gauche;GAU;1954;43;Profession intermédiaire de la santé et du travail social;67;Professions Intermédiaires
+marie-christine barac'h;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1955;75;Ancienne profession intermédiaire;66;Retraités
+sonya nicolas;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1956;34;Professeur, profession scientifique;65;Cadres et professions intellectuelles supérieures
+christian meheust;NA;présent;2021-07-05;LUG;M;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+marie-annick guillou;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+françoise barbier;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1958;77;Ancien employé;63;Retraités
+anne-claire even;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1962;34;Professeur, profession scientifique;59;Cadres et professions intellectuelles supérieures
+christine tanguy;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1968;56;Personnel des services directs aux particuliers;53;Employés
+myriam dubourg;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1969;42;Professeur des écoles, instituteur et assimilé;52;Professions Intermédiaires
+fabrice louedec;NA;présent;2021-07-05;LUG;M;Union de la gauche;GAU;1971;34;Professeur, profession scientifique;50;Cadres et professions intellectuelles supérieures
+nolwenn henry;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1972;46;Profession intermédiaire administrative et commerciale des entreprises;49;Professions Intermédiaires
+carine hue;NA;présent;2021-07-05;LUG;F;Union de la gauche;GAU;1977;38;Ingénieur et cadre technique d'entreprise;44;Cadres et professions intellectuelles supérieures
+christophe kergoat;NA;présent;2021-07-05;LUG;M;Union de la gauche;GAU;1978;52;Employé civil et agent de service de la fonction publique;43;Employés
+gaël cornec;NA;présent;2021-07-05;LREM;M;La République en marche;CENT;1974;33;Cadre de la fonction publique;47;Cadres et professions intellectuelles supérieures
+louison noël;NA;présent;2021-07-05;LREM;M;La République en marche;CENT;1953;72;Ancien artisan, commerçant, chef d'entreprise;68;Retraités
+danielle marec;NA;présent;2021-07-05;LREM;F;La République en marche;CENT;1942;75;Ancienne profession intermédiaire;79;Retraités
+anne le guen;NA;présent;2021-07-05;LDVG;F;Divers gauche;GAU;1990;38;Ingénieur et cadre technique d'entreprise;31;Cadres et professions intellectuelles supérieures
+yves nedellec;marie-annick guillou;procuration;2021-07-05;LUG;M;Union de la gauche;GAU;1956;33;Cadre de la fonction publique;65;Cadres et professions intellectuelles supérieures
+fabien canevet;patrice kervaon;procuration;2021-07-05;LUG;M;Union de la gauche;GAU;1978;42;Professeur des écoles, instituteur et assimilé;43;Professions Intermédiaires
+catherine bridet;danielle marec;procuration;2021-07-05;LREM;F;La République en marche;CENT;1974;31;Profession libérale;47;Cadres et professions intellectuelles supérieures
+jean-yves callac;NA;absent;2021-07-05;LDVG;M;Divers gauche;GAU;1946;11;Agriculteur sur petite exploitation;75;Agriculteurs exploitants
+paul le bihan;NA;présent;2021-09-27;LUG;M;Union de la gauche;GAU;1957;38;Ingénieur et cadre technique d'entreprise;64;Cadres et professions intellectuelles supérieures
+eric robert;NA;présent;2021-09-27;LUG;M;Union de la gauche;GAU;1968;37;Cadre administratif et commercial d'entreprise;53;Cadres et professions intellectuelles supérieures
+françoise le men;NA;présent;2021-09-27;LUG;F;Union de la gauche;GAU;1954;74;Ancien cadre;67;Retraités
+cédric seureau;NA;présent;2021-09-27;LUG;M;Union de la gauche;GAU;1982;38;Ingénieur et cadre technique d'entreprise;39;Cadres et professions intellectuelles supérieures
+bernadette corvisier;NA;présent;2021-09-27;LUG;F;Union de la gauche;GAU;1958;33;Cadre de la fonction publique;63;Cadres et professions intellectuelles supérieures
+marc nedelec;NA;présent;2021-09-27;LUG;M;Union de la gauche;GAU;1955;78;Ancien ouvrier;66;Retraités
+trefina kerrain;NA;présent;2021-09-27;LUG;F;Union de la gauche;GAU;1987;56;Personnel des services directs aux particuliers;34;Employés
+gwénaëlle lair;NA;présent;2021-09-27;LUG;F;Union de la gauche;GAU;1976;85;Personne diverse sans activité professionnelle de moins de 60 ans (sauf retraité);45;Autres personnes sans activité professionnelle
+michel diverchy;NA;présent;2021-09-27;LUG;M;Union de la gauche;GAU;1963;38;Ingénieur et cadre technique d'entreprise;58;Cadres et professions intellectuelles supérieures
+hervé latimier;NA;présent;2021-09-27;LUG;M;Union de la gauche;GAU;1950;74;Ancien cadre;71;Retraités
+pierre gouzi;NA;présent;2021-09-27;LUG;M;Union de la gauche;GAU;1952;74;Ancien cadre;69;Retraités
+yvon briand;NA;présent;2021-09-27;LUG;M;Union de la gauche;GAU;1954;43;Profession intermédiaire de la santé et du travail social;67;Professions Intermédiaires
+yves nedellec;NA;présent;2021-09-27;LUG;M;Union de la gauche;GAU;1956;33;Cadre de la fonction publique;65;Cadres et professions intellectuelles supérieures
+françoise barbier;NA;présent;2021-09-27;LUG;F;Union de la gauche;GAU;1958;77;Ancien employé;63;Retraités
+anne-claire even;NA;présent;2021-09-27;LUG;F;Union de la gauche;GAU;1962;34;Professeur, profession scientifique;59;Cadres et professions intellectuelles supérieures
+christine tanguy;NA;présent;2021-09-27;LUG;F;Union de la gauche;GAU;1968;56;Personnel des services directs aux particuliers;53;Employés
+myriam dubourg;NA;présent;2021-09-27;LUG;F;Union de la gauche;GAU;1969;42;Professeur des écoles, instituteur et assimilé;52;Professions Intermédiaires
+fabrice louedec;NA;présent;2021-09-27;LUG;M;Union de la gauche;GAU;1971;34;Professeur, profession scientifique;50;Cadres et professions intellectuelles supérieures
+carine hue;NA;présent;2021-09-27;LUG;F;Union de la gauche;GAU;1977;38;Ingénieur et cadre technique d'entreprise;44;Cadres et professions intellectuelles supérieures
+fabien canevet;NA;présent;2021-09-27;LUG;M;Union de la gauche;GAU;1978;42;Professeur des écoles, instituteur et assimilé;43;Professions Intermédiaires
+christophe kergoat;NA;présent;2021-09-27;LUG;M;Union de la gauche;GAU;1978;52;Employé civil et agent de service de la fonction publique;43;Employés
+catherine bridet;NA;présent;2021-09-27;LREM;F;La République en marche;CENT;1974;31;Profession libérale;47;Cadres et professions intellectuelles supérieures
+louison noël;NA;présent;2021-09-27;LREM;M;La République en marche;CENT;1953;72;Ancien artisan, commerçant, chef d'entreprise;68;Retraités
+danielle marec;NA;présent;2021-09-27;LREM;F;La République en marche;CENT;1942;75;Ancienne profession intermédiaire;79;Retraités
+gérard falézan;NA;présent;2021-09-27;LREM;M;La République en marche;CENT;1947;74;Ancien cadre;74;Retraités
+marie-christine barac'h;bernadette corvisier;procuration;2021-09-27;LUG;F;Union de la gauche;GAU;1955;75;Ancienne profession intermédiaire;66;Retraités
+sonya nicolas;eric robert;procuration;2021-09-27;LUG;F;Union de la gauche;GAU;1956;34;Professeur, profession scientifique;65;Cadres et professions intellectuelles supérieures
+christian meheust;françoise barbier;procuration;2021-09-27;LUG;M;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+patrice kervaon;NA;absent;2021-09-27;LUG;M;Union de la gauche;GAU;1960;33;Cadre de la fonction publique;61;Cadres et professions intellectuelles supérieures
+marie-annick guillou;NA;absent;2021-09-27;LUG;F;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+nolwenn henry;NA;absent;2021-09-27;LUG;F;Union de la gauche;GAU;1972;46;Profession intermédiaire administrative et commerciale des entreprises;49;Professions Intermédiaires
+jean-yves callac;NA;absent;2021-09-27;LDVG;M;Divers gauche;GAU;1946;11;Agriculteur sur petite exploitation;75;Agriculteurs exploitants
+anne le guen;NA;absent;2021-09-27;LDVG;F;Divers gauche;GAU;1990;38;Ingénieur et cadre technique d'entreprise;31;Cadres et professions intellectuelles supérieures
+paul le bihan;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1957;38;Ingénieur et cadre technique d'entreprise;64;Cadres et professions intellectuelles supérieures
+eric robert;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1968;37;Cadre administratif et commercial d'entreprise;53;Cadres et professions intellectuelles supérieures
+françoise le men;NA;présent;2021-11-08;LUG;F;Union de la gauche;GAU;1954;74;Ancien cadre;67;Retraités
+cédric seureau;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1982;38;Ingénieur et cadre technique d'entreprise;39;Cadres et professions intellectuelles supérieures
+bernadette corvisier;NA;présent;2021-11-08;LUG;F;Union de la gauche;GAU;1958;33;Cadre de la fonction publique;63;Cadres et professions intellectuelles supérieures
+marc nedelec;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1955;78;Ancien ouvrier;66;Retraités
+trefina kerrain;NA;présent;2021-11-08;LUG;F;Union de la gauche;GAU;1987;56;Personnel des services directs aux particuliers;34;Employés
+patrice kervaon;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1960;33;Cadre de la fonction publique;61;Cadres et professions intellectuelles supérieures
+gwénaëlle lair;NA;présent;2021-11-08;LUG;F;Union de la gauche;GAU;1976;85;Personne diverse sans activité professionnelle de moins de 60 ans (sauf retraité);45;Autres personnes sans activité professionnelle
+michel diverchy;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1963;38;Ingénieur et cadre technique d'entreprise;58;Cadres et professions intellectuelles supérieures
+pierre gouzi;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1952;74;Ancien cadre;69;Retraités
+yvon briand;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1954;43;Profession intermédiaire de la santé et du travail social;67;Professions Intermédiaires
+marie-christine barac'h;NA;présent;2021-11-08;LUG;F;Union de la gauche;GAU;1955;75;Ancienne profession intermédiaire;66;Retraités
+sonya nicolas;NA;présent;2021-11-08;LUG;F;Union de la gauche;GAU;1956;34;Professeur, profession scientifique;65;Cadres et professions intellectuelles supérieures
+christian meheust;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+yves nedellec;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1956;33;Cadre de la fonction publique;65;Cadres et professions intellectuelles supérieures
+marie-annick guillou;NA;présent;2021-11-08;LUG;F;Union de la gauche;GAU;1956;74;Ancien cadre;65;Retraités
+françoise barbier;NA;présent;2021-11-08;LUG;F;Union de la gauche;GAU;1958;77;Ancien employé;63;Retraités
+anne-claire even;NA;présent;2021-11-08;LUG;F;Union de la gauche;GAU;1962;34;Professeur, profession scientifique;59;Cadres et professions intellectuelles supérieures
+fabrice louedec;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1971;34;Professeur, profession scientifique;50;Cadres et professions intellectuelles supérieures
+nolwenn henry;NA;présent;2021-11-08;LUG;F;Union de la gauche;GAU;1972;46;Profession intermédiaire administrative et commerciale des entreprises;49;Professions Intermédiaires
+carine hue;NA;présent;2021-11-08;LUG;F;Union de la gauche;GAU;1977;38;Ingénieur et cadre technique d'entreprise;44;Cadres et professions intellectuelles supérieures
+fabien canevet;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1978;42;Professeur des écoles, instituteur et assimilé;43;Professions Intermédiaires
+christophe kergoat;NA;présent;2021-11-08;LUG;M;Union de la gauche;GAU;1978;52;Employé civil et agent de service de la fonction publique;43;Employés
+catherine bridet;NA;présent;2021-11-08;LREM;F;La République en marche;CENT;1974;31;Profession libérale;47;Cadres et professions intellectuelles supérieures
+louison noël;NA;présent;2021-11-08;LREM;M;La République en marche;CENT;1953;72;Ancien artisan, commerçant, chef d'entreprise;68;Retraités
+danielle marec;NA;présent;2021-11-08;LREM;F;La République en marche;CENT;1942;75;Ancienne profession intermédiaire;79;Retraités
+jean-yves callac;NA;présent;2021-11-08;LDVG;M;Divers gauche;GAU;1946;11;Agriculteur sur petite exploitation;75;Agriculteurs exploitants
+anne le guen;NA;présent;2021-11-08;LDVG;F;Divers gauche;GAU;1990;38;Ingénieur et cadre technique d'entreprise;31;Cadres et professions intellectuelles supérieures
+gérard falézan;NA;présent;2021-11-08;LREM;M;La République en marche;CENT;1947;74;Ancien cadre;74;Retraités
+hervé latimier;trefina kerrain;procuration;2021-11-08;LUG;M;Union de la gauche;GAU;1950;74;Ancien cadre;71;Retraités
+christine tanguy;bernadette corvisier;procuration;2021-11-08;LUG;F;Union de la gauche;GAU;1968;56;Personnel des services directs aux particuliers;53;Employés
+myriam dubourg;gwénaëlle lair;procuration;2021-11-08;LUG;F;Union de la gauche;GAU;1969;42;Professeur des écoles, instituteur et assimilé;52;Professions Intermédiaires

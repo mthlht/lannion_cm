@@ -6,9 +6,8 @@ library(pdftools)
 liste_pdf <- list.files("data/raw/pdf",
                         full.names = TRUE)
 
-liste_pdf <- liste_pdf[liste_pdf != "data/raw/pdf/Procès verbal du conseil municipal du 25 mai.pdf"]
-
 for(un_pdf in liste_pdf) {
+  
   
   #1e étape - lecture du fichier pdf
   
@@ -39,8 +38,16 @@ for(un_pdf in liste_pdf) {
   
   raw_index_present <- which(str_detect(tidy_lines, "présents"))
   raw_index_procuration <- which(str_detect(tidy_lines, "procuration"))
+  raw_index_excuses <- which(str_detect(tidy_lines, "excusés"))
   raw_index_absent <- which(str_detect(tidy_lines, "absent"))
   raw_index_fin <- which(str_detect(tidy_lines, "question"))
+  
+  ##exception conseil du 25 mai 2020 - création forcée d'un index_fin
+  if(!is_empty(raw_index_excuses) & is_empty(raw_index_fin)) {
+    
+    raw_index_fin <- min(raw_index_excuses)+2
+    
+  }
   
   #6e étape - affinement variables index
   
@@ -65,10 +72,14 @@ for(un_pdf in liste_pdf) {
     
   } else { index_absent <- FALSE }
   
-  ## tri index procuration
+  ## tri index procuration (avec l'exception excusés spécifique au 25 mai 2020)
   if(!is_empty(raw_index_procuration) & min(raw_index_procuration)<index_fin) {
     
     index_procuration <- min(raw_index_procuration)
+    
+  } else if(!is_empty(raw_index_excuses) & min(raw_index_excuses)<index_fin) {
+      
+      index_procuration <- min(raw_index_excuses)
     
   } else { index_procuration <- FALSE }
   
@@ -81,22 +92,34 @@ for(un_pdf in liste_pdf) {
     
     ## séquences
     ### présent
-    range_present <- seq(from = index_present+1,
+    range_present <- seq(from = index_present,
                          to = index_absent-1,
                          by = 1)
     ### absent
     if(index_procuration-index_absent>1) {
-    range_absent <- seq(from = index_absent+1,
-                         to = index_procuration-1,
-                         by = 1)
-    } else { range_absent = index_absent}
+      
+      range_absent <- seq(from = index_absent,
+                          to = index_procuration-1,
+                          by = 1)
+      
+    } else if(index_procuration-index_absent == 1) {
+      
+      range_absent = index_absent;
+      
+    }
     
     ### procuration
     if(index_fin-index_procuration>1) {
-    range_procuration <- seq(from = index_procuration+1,
-                        to = index_fin-1,
-                        by = 1)
-    } else { range_procuration = index_procuration }
+      
+      range_procuration <- seq(from = index_procuration,
+                               to = index_fin-1,
+                               by = 1)
+      
+    } else if(index_fin-index_procuration == 1) {
+      
+      range_procuration <- index_procuration
+      
+    }
     
   } else if(index_present & index_absent & !index_procuration) {
     
@@ -105,15 +128,19 @@ for(un_pdf in liste_pdf) {
     
     ## séquences
     ### présent
-    range_present <- seq(from = index_present+1,
+    range_present <- seq(from = index_present,
                          to = index_absent-1,
                          by = 1)
     ### absent
     if(index_fin-index_absent>1) {
-    range_absent <- seq(from = index_absent+1,
-                        to = index_fin-1,
-                        by = 1)
-    } else { range_absent <- index_absent }
+      range_absent <- seq(from = index_absent,
+                          to = index_fin-1,
+                          by = 1)
+    } else if(index_fin-index_absent == 1) {
+      
+      range_absent <- index_absent
+      
+    }
     
   } else if(index_present & !index_absent & index_procuration) {
     
@@ -122,15 +149,19 @@ for(un_pdf in liste_pdf) {
     
     ## séquences
     ### présent
-    range_present <- seq(from = index_present+1,
+    range_present <- seq(from = index_present,
                          to = index_procuration-1,
                          by = 1)
-    ### absent
+    ### procuration
     if(index_fin-index_procuration>1) {
-    range_procuration <- seq(from = index_procuration+1,
-                        to = index_fin-1,
-                        by = 1)
-    } else { range_procuration = index_procuration }
+      range_procuration <- seq(from = index_procuration,
+                               to = index_fin-1,
+                               by = 1)
+    } else if(index_fin-index_procuration == 1) {
+      
+      range_procuration <- index_procuration
+      
+    }
     
   } else {
     
@@ -139,7 +170,7 @@ for(un_pdf in liste_pdf) {
     
     ## séquences
     ### présent
-    range_present <- seq(from = index_present+1,
+    range_present <- seq(from = index_present,
                          to = index_fin-1,
                          by = 1)
     
@@ -250,15 +281,26 @@ for(un_pdf in liste_pdf) {
   
   #11e étape - ajoute de la date
   
-  ## sélection de l'index de la ligne qui contient la date
-  index_date <- min(which(str_starts(tidy_lines,
-                                 "lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche")))
+  ## Exception pour le CM du 25 mai 2020
+  if(is_empty(raw_index_excuses)) {
+    
+    ## sélection de l'index de la ligne qui contient la date
+    index_date <- min(which(str_starts(tidy_lines,
+                                       "lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche")))
+    
+    ## sélection de la ligne qui contient la date
+    raw_date_cm <- tidy_lines[index_date]
+    
+    ## transformation de la chaine de caractères en date
+    tidy_date <- dmy(raw_date_cm)
+    
+  } else {
+    
+    tidy_date <- dmy("25-05-2020")
+    
+  }
   
-  ## sélection de la ligne qui contient la date
-  raw_date_cm <- tidy_lines[index_date]
-  
-  ## transformation de la chaine de caractères en date
-  tidy_date <- dmy(raw_date_cm)
+ 
   
   #12e étape - ajout date et tri des procurations
   
@@ -273,9 +315,12 @@ for(un_pdf in liste_pdf) {
   
   #13e étape - écriture du fichier
   
-  file_path <- paste0("data/tidy/cm_lannion-", tidy_date, ".csv")
+  file_path <- paste0("data/tidy/cm_lannion/cm_lannion-", tidy_date, ".csv")
   
   write_csv(tidy_df, file_path)
- 
+  
+  # Suppression des varaibles créées dans la boucle
+  rm(list= ls()[!ls() %in% c("liste_pdf", "un_pdf")])
+  
 }
 

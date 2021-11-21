@@ -1,0 +1,598 @@
+---
+title: "Analyse des présences et des absences au conseil municipal de Lannion"
+author: "IUT de Lannion"
+date: "19/11/2021"
+output:
+    html_document:
+        toc: true
+        toc_float: true
+editor_options: 
+  chunk_output_type: inline
+  mainfont: Roboto
+---
+
+<style type="text/css">
+
+body {
+font-size: 16px;
+}
+
+</style>
+
+```{r chargement_lib_data, message=F, echo=F, warning=F}
+# Chargement des librairies
+library(tidyverse)
+library(lubridate)
+library(plotly)
+library(forcats)
+
+# Chargement des données
+raw_df_cm_lannion <- read_delim("../data/tidy/tidy_df_cm_lannion.csv") %>%
+  distinct()
+
+# Dates du premier et du dernier CM de notre data set
+
+## stockage des dates dans deux variables first_cm et last_cm
+first_cm <- min(raw_df_cm_lannion$date, na.rm = T)
+last_cm <- max(raw_df_cm_lannion$date, na.rm = T)
+
+## mise en format XX mois XXXX des dates
+first_cm_label <- paste(day(first_cm),
+                        month(first_cm, label = TRUE, abbr = FALSE),
+                        year(first_cm),
+                        sep = " ")
+
+last_cm_label <- paste(day(last_cm),
+                       month(last_cm, label = TRUE, abbr = FALSE),
+                       year(last_cm),
+                       sep = " ")
+
+
+```
+
+Nous avons recensé les présences et les absences aux conseils municipaux de Lannion à partir des comptes rendus publiés sous format pdf sur le site de la [ville de Lannion](https://www.lannion.bzh/mairie/conseil-municipal).<br>
+Au total, `r length(unique(raw_df_cm_lannion$date))` conseils municipaux sont analysés ici sur une période courant du `r first_cm_label` au `r last_cm_label`.
+<br>
+<br>
+**Avertissement** Le décompte des présences et des absences aux conseils municpaux est réalisé à chaque début de séance. Ainsi des conseillers municipaux peuvent être déclarés absents ou ayant donné procuration à l'ouverture de la séance tout en ayant pourtant assisté à une partie du conseil, s'ils sont arrivés plus tard pendant la séance. Ces exceptions ne sont pas comptabilisées dans la base de données.
+
+# **Répartition globale**
+
+## **Pour tous les conseillers municpaux**
+
+```{r global_data, message=F, echo=F, warning=F}
+
+# Calcul du nombre total d'absences et de présences, tous CM confondus
+global_lannion <- raw_df_cm_lannion %>%
+  mutate(etat = ifelse(etat != "présent",
+                       "procuration ou absent",
+                       etat)) %>%
+  group_by(etat) %>%
+  summarise(cases = n()) %>%
+  ungroup() %>%
+  mutate(percent=cases/sum(cases)*100)
+
+```
+
+Au total, notre base de données compte `r global_lannion$cases[global_lannion$etat=="présent"]` présences et `r global_lannion$cases[global_lannion$etat!="présent"]` absences ou procurations. Le nombre d'absences représente ainsi `r round(global_lannion$percent[global_lannion$etat!="présent"], 2)`% de l'ensemble.
+
+```{r global_mean_data, message=F, echo=F, warning=F}
+
+# Calcul du taux de présence par conseil municipal
+global_mean_lannion <- raw_df_cm_lannion %>%
+  mutate(etat = ifelse(etat != "présent",
+                       "procuration ou absent",
+                       etat)) %>%
+  group_by(date, etat) %>%
+  summarise(cases = n()) %>%
+  ungroup() %>%
+  group_by(date) %>%
+  mutate(total=sum(cases)) %>%
+  ungroup() %>%
+  filter(etat=="présent") %>%
+  mutate(percent_presence = cases/total*100)
+
+# conseil municipal qui a eu le plus faible taux de présence
+
+min_global_mean_lannion <- global_mean_lannion %>%
+  filter(percent_presence==min(percent_presence, na.rm = T))
+
+# conseil municipal qui a eu le plus fort taux de présence
+
+max_global_mean_lannion <- global_mean_lannion %>%
+  filter(percent_presence==max(percent_presence, na.rm = T))
+
+
+
+```
+
+En moyenne, le taux de présence par conseil municipal est de **`r round(mean(global_mean_lannion$percent_presence), 2)`%**.
+<br>
+Le conseil municpal qui a compté le plus faible taux de présence est celui du **`r min_global_mean_lannion$date`** avec un taux de **`r round(min_global_mean_lannion$percent_presence, 2)`%**. Le conseil municpal qui a compté le plus fort taux de présence est celui du **`r max_global_mean_lannion$date`** avec un taux de **`r round(max_global_mean_lannion$percent_presence, 2)`%**.
+
+```{r presence_date, message=F, echo=F, warning=F}
+
+global_mean_lannion %>%
+  mutate(date_label = paste(day(date),
+                            month(date, label = T),
+                            year(date),
+                            sep = " ")) %>%
+  mutate(date_label=reorder(date_label, date)) %>%
+  ggplot(aes(x=date_label, y=percent_presence)) +
+  geom_bar(stat = "identity",
+           fill='#66c2a5') +
+  geom_text(aes(label=paste0(round(percent_presence), "%")),
+            size = 4,
+            vjust = -0.2,
+            color = "black",
+            fontface = "bold") +
+  coord_cartesian(clip = "off") +
+  labs(title = "Taux de présence aux conseils municipaux de Lannion",
+       subtitle = "",
+       x="",
+       y="",
+       fill="") +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 45, hjust=1),
+        legend.key.width = unit(1, "cm"),
+        legend.position = "top",
+        legend.margin=margin(1,0,0,0),
+        legend.box.margin=margin(0,0,4,0),
+        plot.margin = unit(c(1,4,1,1), "lines"),
+        axis.line = element_line(color = "#999999"),
+        axis.ticks = element_line(color = "#999999"),
+        plot.title = element_text(face = "bold"),
+        plot.caption = element_text(margin = margin(t=25)),
+        axis.text = element_text(color = "#999999"),
+        axis.title = element_text(color = "#999999"),
+        axis.title.y = element_text(vjust = 0.5),
+        axis.title.x = element_text(hjust = 0.5),
+        panel.margin.y=unit(1,"lines"),
+        text=element_text(family = "Roboto"),
+        plot.title.position = "plot")
+
+```
+
+## **Par conseiller municipal**
+
+```{r global_lannion_indiv_data, message=F, echo=F, warning=F, fig.height=15}
+
+# Calcul du nombre total d'absences et de présences, tous CM confondus
+
+global_lannion_indiv <- raw_df_cm_lannion %>%
+  mutate(etat = ifelse(etat != "présent",
+                       "procuration ou absent",
+                       etat)) %>%
+  group_by(nom, etat) %>%
+  summarise(cases = n()) %>%
+  ungroup() %>%
+  group_by(nom) %>%
+  mutate(percent=cases/sum(cases)*100) %>%
+  ungroup()
+
+
+```
+
+
+```{r global_lannion_indiv_graph, message=F, echo=F, warning=F, fig.height=12}
+
+# Calcul du nombre total d'absences et de présences, tous CM confondus
+
+global_lannion_indiv <- raw_df_cm_lannion %>%
+  mutate(etat = ifelse(etat != "présent",
+                       "procuration ou absent",
+                       etat)) %>%
+  group_by(nom, etat) %>%
+  summarise(cases = n()) %>%
+  ungroup() %>%
+  group_by(nom) %>%
+  mutate(percent=cases/sum(cases)*100) %>%
+  ungroup()
+
+
+# Variables pour ordonner le graphique par du plus faible taux de présence au plus fort
+
+df_order <- global_lannion_indiv %>%
+  ungroup() %>%
+  filter(etat == "présent") %>%
+  mutate(nom_order = reorder(nom, -percent)) %>%
+  select(nom, nom_order) %>%
+  distinct()
+
+# Jointure de la colonne ordonnée
+df_to_graph <- global_lannion_indiv %>%
+  left_join(df_order, by = c("nom" = "nom")) %>%
+  select(nom_order, etat, cases, percent) %>%
+  gather(key="type", value="val", 3:4) %>%
+  mutate(type=ifelse(type=="percent",
+                     "en pourcentages",
+                     "en nombres"))
+
+
+# Graphique
+df_to_graph %>%
+  ggplot(aes(x=val, y=nom_order, fill=etat)) +
+  geom_bar(stat = "identity",
+           position = "stack",
+           show.legend = T) +
+  geom_text(aes(label=ifelse(type=="en pourcentages",
+                             paste0(round(val), "%"),
+                             val),
+                hjust=ifelse(etat=="présent",
+                             -0.2,
+                             -0.2)),
+            position = "stack",
+            size = 4,
+            color = "black",
+            fontface = "bold") +
+  scale_fill_manual(values = c('#66c2a5','#fc8d62')) +
+  coord_cartesian(clip = "off") +
+  labs(title = "Présences et absences par conseiller municipal",
+       subtitle = "",
+       x="",
+       y="",
+       fill="") +
+  theme_classic() +
+  facet_wrap(~type, scales = "free_x") +
+  theme(legend.key.width = unit(1, "cm"),
+        legend.position = "top",
+        legend.margin=margin(1,0,0,0),
+        legend.box.margin=margin(0,0,4,0),
+        plot.margin = unit(c(1,4,1,1), "lines"),
+        axis.line = element_line(color = "#999999"),
+        axis.ticks = element_line(color = "#999999"),
+        plot.title = element_text(face = "bold"),
+        plot.caption = element_text(margin = margin(t=25)),
+        axis.text = element_text(color = "#999999"),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.line.x = element_blank(),
+        axis.title = element_text(color = "#999999"),
+        axis.title.y = element_text(vjust = 0.5),
+        axis.title.x = element_text(hjust = 0.5),
+        panel.margin.y=unit(1,"lines"),
+        text=element_text(family = "Roboto"),
+        plot.title.position = "plot")
+
+```
+
+# **Répartition par étiquette et nuance politique**
+
+## **Pour tous les conseillers municpaux**
+
+
+```{r nb_cm_etiquette, message=F, echo=F, warning=F}
+
+# Décompte des conseillers municipaux par étiquette
+nb_cm_etiquette <- raw_df_cm_lannion %>%
+  select(nom, LibNua) %>%
+  distinct() %>%
+  group_by(LibNua) %>%
+  summarise(cases = n()) %>%
+  mutate(percent=cases/sum(cases)*100) %>%
+  ungroup() %>%
+  mutate(LibNua=reorder(LibNua, cases)) %>%
+  gather(key="type", value="val", 2:3) %>%
+  mutate(type=ifelse(type=="percent",
+                     "en pourcentages",
+                     "en nombres"))
+
+# Graphique
+nb_cm_etiquette %>%
+  ggplot(aes(x=val, y=LibNua, fill=LibNua)) +
+  geom_bar(stat = "identity",
+           show.legend = F) +
+  geom_text(aes(label=ifelse(type=="en pourcentages",
+                             paste0(round(val), "%"),
+                             val)),
+            hjust = -0.2,
+            position = "stack",
+            size = 4,
+            color = "black",
+            fontface = "bold") +
+  coord_cartesian(clip = "off") +
+  labs(title = "Répartition des conseillers municipaux par groupe politique",
+       subtitle = "",
+       x="",
+       y="",
+       fill="") +
+  scale_fill_manual(values = c("Divers gauche"="#66c2a5",
+                               "La République en marche"="#fc8d62",
+                               "Union de la gauche"="#8da0cb")) +
+  theme_classic() +
+  facet_wrap(~type, scales = "free_x") +
+  theme_classic() +
+  facet_wrap(~type, scales = "free_x") +
+  theme(legend.key.width = unit(1, "cm"),
+        legend.position = "top",
+        legend.margin=margin(1,0,0,0),
+        legend.box.margin=margin(0,0,4,0),
+        plot.margin = unit(c(1,4,1,1), "lines"),
+        axis.line = element_line(color = "#999999"),
+        axis.ticks = element_line(color = "#999999"),
+        plot.title = element_text(face = "bold"),
+        plot.caption = element_text(margin = margin(t=25)),
+        axis.text = element_text(color = "#999999"),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.line.x = element_blank(),
+        axis.title = element_text(color = "#999999"),
+        axis.title.y = element_text(vjust = 0.5),
+        axis.title.x = element_text(hjust = 0.5),
+        panel.margin.y=unit(1,"lines"),
+        text=element_text(family = "Roboto"),
+        plot.title.position = "plot")
+
+
+```
+
+```{r mean_cm_etiquette_presence_data, message=F, echo=F, warning=F}
+
+# Calcul du taux moyen de présence à chaque cm par groupe politique
+
+mean_etiquette_cm<- raw_df_cm_lannion %>%
+  mutate(etat = ifelse(etat != "présent",
+                       "procuration ou absent",
+                       etat)) %>%
+  group_by(date, LibNua, etat) %>%
+  summarise(cases = n()) %>%
+  ungroup() %>%
+  group_by(date, LibNua) %>%
+  mutate(total=sum(cases)) %>%
+  ungroup() %>%
+  filter(etat=="présent") %>%
+  mutate(percent_presence = cases/total*100) %>%
+  group_by(LibNua) %>%
+  summarise(mean_cases = round(mean(cases)),
+            mean_percent = mean(percent_presence)) %>%
+  ungroup()
+
+```
+
+Présence moyenne des conseillers municipaux :  
+- dans le groupe **`r mean_etiquette_cm$LibNua[mean_etiquette_cm$LibNua=="Divers gauche"]`**, le nombre moyen d'élus présents est de **`r mean_etiquette_cm$mean_cases[mean_etiquette_cm$LibNua=="Divers gauche"]`**, soit un taux de présence de **`r round(mean_etiquette_cm$mean_percent[mean_etiquette_cm$LibNua=="Divers gauche"],2)`%**  
+- dans le groupe **`r mean_etiquette_cm$LibNua[mean_etiquette_cm$LibNua=="La République en marche"]`**, le nombre moyen d'élus présents est de **`r mean_etiquette_cm$mean_cases[mean_etiquette_cm$LibNua=="La République en marche"]`**, soit un taux de présence de **`r round(mean_etiquette_cm$mean_percent[mean_etiquette_cm$LibNua=="La République en marche"], 2)`%**  
+- dans le groupe **`r mean_etiquette_cm$LibNua[mean_etiquette_cm$LibNua=="Union de la gauche"]`**, le nombre moyen d'élus présents est de **`r mean_etiquette_cm$mean_cases[mean_etiquette_cm$LibNua=="Union de la gauche"]`**, soit un taux de présence de **`r round(mean_etiquette_cm$mean_percent[mean_etiquette_cm$LibNua=="Union de la gauche"], 2)`%**  
+
+```{r mean_cm_etiquette_presence_graph, message=F, echo=F, warning=F}
+# Graphique
+mean_etiquette_cm %>%
+  mutate(LibNua = reorder(LibNua, -mean_percent)) %>%
+  gather(key="type", value="val", 2:3) %>%
+  mutate(type=ifelse(type=="mean_percent",
+                     "en pourcentages",
+                     "en nombres")) %>%
+  ggplot(aes(x=val, y=LibNua, fill=LibNua)) +
+  geom_bar(stat = "identity",
+           show.legend = F) +
+  geom_text(aes(label=ifelse(type=="en pourcentages",
+                             paste0(round(val), "%"),
+                             val)),
+            hjust = -0.2,
+            size = 4,
+            color = "black",
+            fontface = "bold") +
+  scale_fill_manual(values = c("Divers gauche"="#66c2a5",
+                               "La République en marche"="#fc8d62",
+                               "Union de la gauche"="#8da0cb")) +
+  coord_cartesian(clip = "off") +
+  labs(title = "Présence moyenne aux conseils municipaux par groupe politique",
+       subtitle = "",
+       x="",
+       y="",
+       fill="") +
+  theme_classic() +
+  facet_wrap(~type, scales = "free_x") +
+  theme(legend.key.width = unit(1, "cm"),
+        legend.position = "top",
+        legend.margin=margin(1,0,0,0),
+        legend.box.margin=margin(0,0,4,0),
+        plot.margin = unit(c(1,4,1,1), "lines"),
+        axis.line = element_line(color = "#999999"),
+        axis.ticks = element_line(color = "#999999"),
+        plot.title = element_text(face = "bold"),
+        plot.caption = element_text(margin = margin(t=25)),
+        axis.text = element_text(color = "#999999"),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.line.x = element_blank(),
+        axis.title = element_text(color = "#999999"),
+        axis.title.y = element_text(vjust = 0.5),
+        axis.title.x = element_text(hjust = 0.5),
+        panel.margin.y=unit(1.5,"lines"),
+        text=element_text(family = "Roboto"),
+        plot.title.position = "plot")
+
+
+
+```
+
+## **Par conseiller municipal**
+
+```{r nb_etiquette_cm, message=F, echo=F, warning=F, fig.height=8}
+
+raw_df_cm_lannion %>%
+  filter(etat != "présent") %>%
+  group_by(LibNua, nom) %>%
+  summarise(cases = n()) %>%
+  ungroup() %>%
+  mutate(nom_order = reorder(nom, cases)) %>%
+  ggplot(aes(x=cases, y=nom_order, fill=LibNua)) +
+  geom_bar(stat = "identity",
+           show.legend = T) +
+  geom_text(aes(label=cases),
+            hjust = -0.2,
+            size = 4,
+            color = "black",
+            fontface = "bold") +
+  scale_fill_manual(values = c("Divers gauche"="#66c2a5",
+                               "La République en marche"="#fc8d62",
+                               "Union de la gauche"="#8da0cb"),
+                    labels = function(x) str_wrap(x, 16)) +
+  guides(fill=guide_legend(nrow=2,byrow=TRUE)) +
+  coord_cartesian(clip = "off") +
+  labs(title = "Nombres d'absences/procurations par conseiller municipal",
+       subtitle = "avec précision du groupe politique",
+       x="",
+       y="",
+       fill="") +
+  theme_classic() +
+  theme(legend.key.width = unit(1, "cm"),
+        legend.position = "top",
+        legend.margin=margin(1,0,0,0),
+        legend.box.margin=margin(0,0,4,0),
+        plot.margin = unit(c(1,4,1,1), "lines"),
+        axis.line = element_line(color = "#999999"),
+        axis.ticks = element_line(color = "#999999"),
+        plot.title = element_text(face = "bold"),
+        plot.caption = element_text(margin = margin(t=25)),
+        axis.text = element_text(color = "#999999"),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.line.x = element_blank(),
+        axis.title = element_text(color = "#999999"),
+        axis.title.y = element_text(vjust = 0.5),
+        axis.title.x = element_text(hjust = 0.5),
+        panel.margin.y=unit(1.5,"lines"),
+        text=element_text(family = "Roboto"),
+        plot.title.position = "plot")
+
+
+```
+
+
+# **Répartition par catégorie socio professionnelle**
+
+
+```{r nb_cm_csp_n1, message=F, echo=F, warning=F}
+
+# Décompte des conseillers municipaux par étiquette
+nb_cm_csp <- raw_df_cm_lannion %>%
+  select(nom, csp_n1) %>%
+  distinct() %>%
+  group_by(csp_n1) %>%
+  summarise(cases = n()) %>%
+  mutate(percent=cases/sum(cases)*100) %>%
+  ungroup() %>%
+  mutate(csp_n1=str_wrap(csp_n1, 16)) %>%
+  mutate(csp_n1=reorder(csp_n1, cases)) %>%
+  gather(key="type", value="val", 2:3) %>%
+  mutate(type=ifelse(type=="percent",
+                     "en pourcentages",
+                     "en nombres"))
+
+# Graphique
+nb_cm_csp %>%
+  ggplot(aes(x=val, y=csp_n1)) +
+  geom_bar(stat = "identity",
+           fill="#66c2a5") +
+  geom_text(aes(label=ifelse(type=="en pourcentages",
+                             paste0(round(val), "%"),
+                             val)),
+            hjust = -0.2,
+            size = 4,
+            color = "black",
+            fontface = "bold") +
+  coord_cartesian(clip = "off") +
+  labs(title = "Répartition des conseillers municipaux par csp",
+       subtitle = "",
+       x="",
+       y="",
+       fill="") +
+  theme_classic() +
+  facet_wrap(~type, scales = "free_x") +
+  theme_classic() +
+  facet_wrap(~type, scales = "free_x") +
+  theme(legend.key.width = unit(1, "cm"),
+        legend.position = "top",
+        legend.margin=margin(1,0,0,0),
+        legend.box.margin=margin(0,0,4,0),
+        plot.margin = unit(c(1,4,1,1), "lines"),
+        axis.line = element_line(color = "#999999"),
+        axis.ticks = element_line(color = "#999999"),
+        plot.title = element_text(face = "bold"),
+        plot.caption = element_text(margin = margin(t=25)),
+        axis.text = element_text(color = "#999999"),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.line.x = element_blank(),
+        axis.title = element_text(color = "#999999"),
+        axis.title.y = element_text(vjust = 0.5),
+        axis.title.x = element_text(hjust = 0.5),
+        panel.margin.y=unit(1,"lines"),
+        text=element_text(family = "Roboto"),
+        plot.title.position = "plot")
+
+
+```
+
+```{r mean_csp_graph, message=F, echo=F, warning=F}
+
+# Calcul du taux moyen de présence à chaque cm par groupe politique
+
+mean_csp_cm<- raw_df_cm_lannion %>%
+  mutate(etat = ifelse(etat != "présent",
+                       "procuration ou absent",
+                       etat)) %>%
+  group_by(date, csp_n1, etat) %>%
+  summarise(cases = n()) %>%
+  ungroup() %>%
+  group_by(date, csp_n1) %>%
+  mutate(total=sum(cases)) %>%
+  ungroup() %>%
+  filter(etat=="présent") %>%
+  mutate(percent_presence = cases/total*100) %>%
+  group_by(csp_n1) %>%
+  summarise(mean_cases = round(mean(cases)),
+            mean_percent = mean(percent_presence)) %>%
+  ungroup()
+
+
+# Graphique
+mean_csp_cm %>%
+  mutate(csp_n1=str_wrap(csp_n1, 16)) %>%
+  mutate(csp_n1 = reorder(csp_n1, mean_percent)) %>%
+  gather(key="type", value="val", 2:3) %>%
+  mutate(type=ifelse(type=="mean_percent",
+                     "en pourcentages",
+                     "en nombres")) %>%
+  ggplot(aes(x=val, y=csp_n1)) +
+  geom_bar(stat = "identity",
+           fill="#66c2a5",
+           show.legend = F) +
+  geom_text(aes(label=ifelse(type=="en pourcentages",
+                             paste0(round(val), "%"),
+                             val)),
+            hjust = -0.2,
+            size = 4,
+            color = "black",
+            fontface = "bold") +
+  coord_cartesian(clip = "off") +
+  labs(title = "Présence moyenne aux conseils municipaux selon la csp",
+       subtitle = "",
+       x="",
+       y="",
+       fill="") +
+  theme_classic() +
+  facet_wrap(~type, scales = "free_x") +
+  theme(legend.key.width = unit(1, "cm"),
+        legend.position = "top",
+        legend.margin=margin(1,0,0,0),
+        legend.box.margin=margin(0,0,4,0),
+        plot.margin = unit(c(1,4,1,1), "lines"),
+        axis.line = element_line(color = "#999999"),
+        axis.ticks = element_line(color = "#999999"),
+        plot.title = element_text(face = "bold"),
+        plot.caption = element_text(margin = margin(t=25)),
+        axis.text = element_text(color = "#999999"),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.line.x = element_blank(),
+        axis.title = element_text(color = "#999999"),
+        axis.title.y = element_text(vjust = 0.5),
+        axis.title.x = element_text(hjust = 0.5),
+        panel.margin.y=unit(1.5,"lines"),
+        text=element_text(family = "Roboto"),
+        plot.title.position = "plot")
+
+```
